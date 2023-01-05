@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food ordering website in pakistan| my food services</title>
+    
+    <link rel="stylesheet" media="screen and (max-width:1170px)" href="phone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<style>
+   html{
+    scroll-behavior: smooth;
+   }
+    #navbar UL {
+        display: flex;
+
+    }
+
+    #navbar::before {
+        content: "";
+        background-color: white;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.5;
+
+    }
+
+    #logo img {
+        height: 55px;
+    }
+
+    #navbar ul li {
+        list-style: none;
+        font-size: 1.3rem;
+        font-weight: bolder;
+
+    }
+
+    #navbar {
+        position: relative;
+    }
+
+
+
+    #navbar ul li a {
+        color: black;
+        display: block;
+        padding: 3px 99px;
+        border-radius: 20px;
+        text-decoration: none;
+        font-family: 'Bree Serif', serif;
+
+    }
+
+    #navbar ul li a:hover {
+        color: white;
+        background-color: rgb(147, 203, 206);
+    }
+
+    #home {
+        display: flex;
+        flex-direction: column;
+        padding: 3px 334px;
+        height: 762px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #home::before {
+        content: "";
+        background: url('./bg.2jpg.webp')no-repeat center center/cover;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.84;
+
+
+    }
+
+    #home p {
+        color: black;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: 'Bree Serif', serif;
+    }
+
+    #home h1 {
+        color: white;
+        text-align: center;
+        font-family: 'Bree Serif', serif;
+    }
+
+    #services {
+        margin: 34px;
+        display: flex;
+    }
+
+    #services .box {
+        border: 2px solid brown;
+        border-radius: 28px;
+        margin: 3px 6px;
+        background-color: rgb(211, 167, 167)(236, 229, 229);
+    }
+
+    #services .box img {
+        height: 160px;
+        display: block;
+        margin: auto;
+
+    }
+
+    #services .box p {
+
+        font-family: 'Bree Serif', serif;
+    }
+
+    #services
+    /* About section */
+
+    #Aboutsection {
+        height: 344px;
+
+    }
+
+    .clientitems {
+        padding: 34px;
+    }
+
+    #Aboutsection::before {
+        content: "";
+        background: url('./bg.jpg')no-repeat center center/cover;
+        position: absolute;
+        height: 51%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.74;
+
+    }
+
+    #clients {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .clientitems img {
+        height: 124px;
+
+    }
+
+
+    /* Contact */
+    #contact {
+        position: relative;
+
+    }
+
+    #contact::before {
+        content: "";
+        background: url('./contact.jpg')no-repeat center center/cover;
+        position: absolute;
+        height: 127%;
+        width: 101%;
+        z-index: -1;
+        opacity: 0.7;
+    }
+
+    #contact-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 34px;
+    }
+
+    #contact-box input,
+    #contact-box textarea {
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 9px;
+        font-size: 1, 1rem;
+    }
+
+    #contact-box label {
+        font-size: 1.2rem;
+        font-family: 'Bree Serif', serif;
+    }
+
+    footer {
+        background: black;
+        color: white;
+        padding: 9px 20px;
+    }
+
+
+
+    .h-primary {
+        font-size: 3.8rem;
+        padding: 12px;
+        font-family: 'Bree Serif', serif;
+    }
+
+
+    .h-secondary {
+        font-size: 2 .3rem;
+        padding: 12px;
+        font-family: 'Bree Serif', serif;
+    }
+
+    .btn {
+
+        padding: 6px 20px;
+        border: 2px solid white;
+        background-color: rgb(237, 237, 105);
+        color: black;
+        margin: 17px;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .btn2 {
+
+        padding: 6px 20px;
+        border: 2px solid rgb(240, 44, 44);
+        background-color: rgb(59, 55, 55);
+        color: white;
+        margin: 17px;
+        font-size: 1.3rem;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .btn2:hover {
+        color: white;
+        background-color: rgb(113, 105, 101);
+    }
+
+    .center {
+        text-align: center;
+    }
+</style>
+
+<body>
+
+
+
+    <nav id="navbar">
+        <div id="logo">
+            <img src="./l.png" alt="my food services">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container"> Our Services</a></li>
+            <li class="item"><a href="#Aboutsection">About us</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+
+
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">
+            Welcome to my online Delicious food website
+        </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisic</p>
+        <p>Lorem ipsum dolor sit amet, consectetur </p>
+        <button class="btn">Order Now</button>
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary center"> Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="./img/img1.png" alt="">
+                <h2 class="h-secondary">
+                    Food ordering
+                </h2>
+                <p class="center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugiat animi enim magni voluptatum cupiditate sit. Ut recusandae possimus,
+                    nam consectetur facilis voluptatem.lorem23
+                    Quibusdam fugit unde consequuntur repellat explicabo assumenda sed.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos qui ipsa sunt repellat eum porro odit
+                    quia, fugiat delectus ad a facilis suscipit!</p>
+            </div>
+
+            <div class="box">
+                <img src="./img/img2.png" alt="">
+                <h2 class="h-secondary">
+                    Food Catering
+                </h2>
+                <p class="center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugiat animi enim magni voluptatum cupiditate sit. Ut recusandae possimus,
+                    nam consectetur facilis voluptatem.
+                    Quibusdam fugit unde consequuntur repellat explicabo assumenda sed.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nam quos impedit? Recusandae
+                    repellendus beatae excepturi provident vitae minus, suscipit odit iusto cupiditate!
+                </p>
+            </div>
+
+            <div class="box">
+                <img src="./img/-For-Food-Delivery0img.png" alt="">
+                <h2 class="h-secondary">
+                    Bulk Ordering
+                </h2>
+                <p class="center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugiat animi enim magni voluptatum cupiditate sit. Ut recusandae possimus,
+                    nam consectetur facilis voluptatem.
+                    Quibusdam fugit unde consequuntur repellat explicabo assumenda sed.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae ipsum, at nihil enim cumque
+                    dolor officia laborum temporibus dolorum repellat aspernatur labore qui?</p>
+            </div>
+        </div>
+    </section>
+    <section id="Aboutsection">
+        <h1 class="h-primary center">About us</h1>
+        <div id="clients">
+            <div class="clientitems">
+                <img src="./logo-3491390_1280.webp" alt="About us">
+            </div>
+            <div class="clientitems">
+                <img src="./R.png" alt="About us">
+            </div>
+            <div class="clientitems">
+                <img src="./img/logo3.png" alt="About us">
+            </div>
+            <div class="clientitems">
+                <img src="./img/logo4.png" alt="About us">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us
+            <div id="contact-box">
+                <form action="">
+
+                    <div class="form-group">
+                        <label for="Name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="Name">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="Name">Phone:</label>
+                        <input type="Phone" name="Phone" id="name" placeholder="Enter your Phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="Message" cols="30" rows="10"></textarea>
+                        <button class="btn2">Submit Now</button>
+                    </div>
+                </form>
+            </div>
+        </h1>
+    </section>
+    <footer>
+        <div class="center">
+            copy Right &copy; www.myonlinedeliciousfoodwebsite.com All Rights Reserved!
+        </div>
+    </footer>
+</body>
+
+</html>
